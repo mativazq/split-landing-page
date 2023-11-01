@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --hover-width: 75%;
+  --other-width: 25%;
+  --speed: 1000ms;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+
+
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #333;
+}
+
+.split {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.split.left {
+  left: 0;
+  background: url('https://scontent.fsfn7-1.fna.fbcdn.net/v/t39.30808-6/272130526_10228151731686663_2633470807273814261_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF-zK2NY_k8fSe9JHM-lnGAG0qjpOZCApwbSqOk5kICnMufJVy_RtQ1l4X4-AbLY0U&_nc_ohc=o_xzUQ3csVIAX9IByjt&_nc_ht=scontent.fsfn7-1.fna&oh=00_AfCGQnhVQyMa73MdScXK6Uh0l-YRbW7VBY8ZXBL0LV_f9g&oe=6546B3DE');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.split.left::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--left-bg-color);
+}
+
+.split.right {
+  right: 0;
+  background: url('https://scontent.fsfn7-1.fna.fbcdn.net/v/t39.30808-6/283996319_10228834185507582_7052241734476740396_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEVHncse9AltBkCwFNfJk1LKcfJqBhpYnQpx8moGGlidPhFgEqRmzBiHJuEPjp4xbk&_nc_ohc=OlhXhT13y1cAX-0Ybf1&_nc_ht=scontent.fsfn7-1.fna&oh=00_AfCYNKh24sAYD6jjbY3VLz4tgWvntH4jlezrU0lYJgCzvw&oe=65475A19');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.split.right::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--right-bg-color);
+}
+
+.split.right,
+.split.left,
+.split.right::before,
+.split.left::before {
+  transition: all var(--speed) ease-in-out;
+}
+
+.hover-left .left {
+  width: var(--hover-width);
+}
+
+.hover-left .right {
+  width: var(--other-width);
+}
+
+.hover-right .right {
+  width: var(--hover-width);
+}
+
+.hover-right .left {
+  width: var(--other-width);
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 2rem;
+    top: 30%;
+  }
+
+  .btn {
+    padding: 1.2rem;
+    width: 12rem;
+  }
+}
