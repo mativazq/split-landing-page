@@ -46,7 +46,7 @@ h1 {
 
 .split.left {
   left: 0;
-  background: url('https://scontent.fsfn7-1.fna.fbcdn.net/v/t39.30808-6/272130526_10228151731686663_2633470807273814261_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF-zK2NY_k8fSe9JHM-lnGAG0qjpOZCApwbSqOk5kICnMufJVy_RtQ1l4X4-AbLY0U&_nc_ohc=o_xzUQ3csVIAX9IByjt&_nc_ht=scontent.fsfn7-1.fna&oh=00_AfCGQnhVQyMa73MdScXK6Uh0l-YRbW7VBY8ZXBL0LV_f9g&oe=6546B3DE');
+  background: url('./img/Clari-2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -61,7 +61,7 @@ h1 {
 
 .split.right {
   right: 0;
-  background: url('https://scontent.fsfn7-1.fna.fbcdn.net/v/t39.30808-6/283996319_10228834185507582_7052241734476740396_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEVHncse9AltBkCwFNfJk1LKcfJqBhpYnQpx8moGGlidPhFgEqRmzBiHJuEPjp4xbk&_nc_ohc=OlhXhT13y1cAX-0Ybf1&_nc_ht=scontent.fsfn7-1.fna&oh=00_AfCYNKh24sAYD6jjbY3VLz4tgWvntH4jlezrU0lYJgCzvw&oe=65475A19');
+  background: url('./img/Clari-4.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
